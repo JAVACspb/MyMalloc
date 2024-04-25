@@ -30,7 +30,7 @@ void *heap_alloc(size_t size){
     heap_alloced[heap_alloced_size++] = chunk; // добавили запись в "наш массив"
     return result; // ретюрн сбствн
 }
-
+// массив для просмотра выделенный данныхь и их метаданных типо
 void head_dump_alloced_chunks(void){
     for(size_t i = 0; i < heap_alloced_size; i++){
         printf(" start: %p, size: %zu\n",
